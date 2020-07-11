@@ -31,13 +31,11 @@ namespace CS321_W5D1_ExerciseLogAPI.Core.Services
 
         public Activity Get(int id)
         {
-            // TODO: return the specified Activity using Find()
             return _activityRepo.Get(id);
         }
 
         public IEnumerable<Activity> GetAll()
         {
-            // TODO: return all Activitys using ToList()
             return _activityRepo.GetAll();
         }
 
@@ -50,12 +48,12 @@ namespace CS321_W5D1_ExerciseLogAPI.Core.Services
 
         public void Remove(Activity Activity)
         {
-            // TODO: remove the Activity
             _activityRepo.Remove(Activity);
         }
 
-        // TODO: Class Project: Add GetAllForUser() method
-
+        public IEnumerable<Activity> GetAllForUser(string userId)
+        {
+            return _activityRepo.GetAllForUser(userId);
+        }
     }
-
 }

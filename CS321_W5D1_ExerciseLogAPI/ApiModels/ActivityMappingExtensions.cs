@@ -57,3 +57,4 @@ namespace CS321_W5D1_ExerciseLogAPI.ApiModels
         }
     }
 }
+
