@@ -23,17 +23,13 @@ namespace CS321_W5D1_ExerciseLogAPI.Controllers
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _config;
 
-        // TODO: Prep Part 1: add constructor and inject UserManager 
-        // TODO: Prep Part 2: inject IConfiguration in the constructor
         public AuthController(UserManager<User> userManager, IConfiguration configuration)
         {
             _userManager = userManager;
             _config = configuration;
         }
 
-        // TODO: Prep Part 1: Add a Registration Action (Part 1 of Prep exercise)
         // POST api/auth/register
-
         [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegistrationModel registration)
