@@ -33,6 +33,7 @@ namespace CS321_W5D1_ExerciseLogAPI.Controllers
 
         // TODO: Prep Part 1: Add a Registration Action (Part 1 of Prep exercise)
         // POST api/auth/register
+
         [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegistrationModel registration)
